@@ -7,12 +7,10 @@ This as jQuery plugin to create 360 degree product image slider. The plugin is f
 Example 1
 ---------------------
 ### Javascript ######
-    window.onload = init;
-
-    var product;
-    function init(){
-
-        product1 = $('.product1').ThreeSixty({
+    
+    $(document).ready(function(){
+    
+        $('.product1').ThreeSixty({
             totalFrames: 72, // Total no. of image you have for 360 slider
             endFrame: 72, // end frame for the auto spin animation
             currentFrame: 1, // This the start frame for auto spin
@@ -26,7 +24,7 @@ Example 1
             navigation: true
         });
 
-    }
+    });
 
 ### HTML Snippet ######
 
